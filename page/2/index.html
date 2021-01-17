@@ -1,0 +1,453 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>零奇部落阁 - Knight Zero's Blog</title><meta name="keywords" content="个人博客,blog,IT,技术,网络,互联网,C#,HTML,编程,视频制作,Pr,AE,ffmpeg,零奇"><meta name="author" content="零奇"><meta name="copyright" content="零奇"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><meta name="description" content="这是零奇的个人博客网站，一个大学生的学习笔记。">
+<meta property="og:type" content="website">
+<meta property="og:title" content="零奇部落阁">
+<meta property="og:url" content="https://www.zyskys.com/page/2/index.html">
+<meta property="og:site_name" content="零奇部落阁">
+<meta property="og:description" content="这是零奇的个人博客网站，一个大学生的学习笔记。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://www.zyskys.com/img/psc.svg">
+<meta property="article:author" content="零奇">
+<meta property="article:tag" content="个人博客,blog,IT,技术,网络,互联网,C#,HTML,编程,视频制作,Pr,AE,ffmpeg,零奇">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://www.zyskys.com/img/psc.svg"><link rel="shortcut icon" href="/img/psc.svg"><link rel="canonical" href="https://www.zyskys.com/page/2/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script async="async" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script>(adsbygoogle = window.adsbygoogle || []).push({
+  google_ad_client: '3557533753208496',
+  enable_page_level_ads: 'true'
+});</script><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?08c722b1ecc2ec3ed428bf088f8cce40";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: true,
+  islazyload: false,
+  isanchor: false
+};
+
+var saveToLocal = {
+  set: function setWithExpiry(key, value, ttl) {
+    const now = new Date()
+    const expiryDay = ttl * 86400000
+    const item = {
+      value: value,
+      expiry: now.getTime() + expiryDay,
+    }
+    localStorage.setItem(key, JSON.stringify(item))
+  },
+
+  get: function getWithExpiry(key) {
+    const itemStr = localStorage.getItem(key)
+
+    if (!itemStr) {
+      return undefined
+    }
+    const item = JSON.parse(itemStr)
+    const now = new Date()
+
+    if (now.getTime() > item.expiry) {
+      localStorage.removeItem(key)
+      return undefined
+    }
+    return item.value
+  }
+}
+
+// https://stackoverflow.com/questions/16839698/jquery-getscript-alternative-in-native-javascript
+const getScript = url => new Promise((resolve, reject) => {
+  const script = document.createElement('script')
+  script.src = url
+  script.async = true
+  script.onerror = reject
+  script.onload = script.onreadystatechange = function() {
+    const loadState = this.readyState
+    if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+    script.onload = script.onreadystatechange = null
+    resolve()
+  }
+  document.head.appendChild(script)
+})</script><script id="config_change">var GLOBAL_CONFIG_SITE = { 
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2021-01-17 17:40:55'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(function () {  window.activateDarkMode = function () {
+    document.documentElement.setAttribute('data-theme', 'dark')
+    if (document.querySelector('meta[name="theme-color"]') !== null) {
+      document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+    }
+  }
+  window.activateLightMode = function () {
+    document.documentElement.setAttribute('data-theme', 'light')
+   if (document.querySelector('meta[name="theme-color"]') !== null) {
+      document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+    }
+  }
+  const autoChangeMode = 'false'
+  const t = saveToLocal.get('theme')
+  if (autoChangeMode === '1') {
+    const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+    const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+    const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+    const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+    if (t === undefined) {
+      if (isLightMode) activateLightMode()
+      else if (isDarkMode) activateDarkMode()
+      else if (isNotSpecified || hasNoSupport) {
+        const now = new Date()
+        const hour = now.getHours()
+        const isNight = hour <= 6 || hour >= 18
+        isNight ? activateDarkMode() : activateLightMode()
+      }
+      window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+        if (saveToLocal.get('theme') === undefined) {
+          e.matches ? activateDarkMode() : activateLightMode()
+        }
+      })
+    } else if (t === 'light') activateLightMode()
+    else activateDarkMode()
+  } else if (autoChangeMode === '2') {
+    const now = new Date()
+    const hour = now.getHours()
+    const isNight = hour <= 6 || hour >= 18
+    if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+    else if (t === 'light') activateLightMode()
+    else activateDarkMode()
+  } else {
+    if (t === 'dark') activateDarkMode()
+    else if (t === 'light') activateLightMode()
+  }const asideStatus = saveToLocal.get('aside-status')
+if (asideStatus !== undefined) {
+   if (asideStatus === 'hide') {
+     document.documentElement.classList.add('hide-aside')
+   } else {
+     document.documentElement.classList.remove('hide-aside')
+   }
+}})()</script><link rel="stylesheet" href="//at.alicdn.com/t/font_2332083_9vz03bpc45.css"><link rel="stylesheet" href="/css/font.css"><meta name="generator" content="Hexo 5.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" src="/img/psc.svg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">33</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">67</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">5</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url(/img/cover/1.jpg)"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">零奇部落阁</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">零奇部落阁</h1><div id="site-subtitle"><span id="subtitle"></span></div><div id="site_social_icons"><a class="social-icon" href="tencent://message/?uin=1134451886&amp;Site=&amp;Menu=yes" target="_blank" title="QQ"><i class="fab fa-qq"></i></a><a class="social-icon" href="mailto:1134451886@qq.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="https://steamcommunity.com/id/1134451886/" target="_blank" title="Steam"><i class="fab fa-steam"></i></a><a class="social-icon" href="https://github.com/1134451886" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="https://space.bilibili.com/7285768" target="_blank" title="B站主页"><i class="icon-bilibili"></i></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left_radius"><a href="/posts/63534.html" title="文章美化——添加颜色标签">     <img class="post_bg" src="https://cdn.jsdelivr.net/gh/1134451886/blog/img/20200513163038.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="文章美化——添加颜色标签"></a></div><div class="recent-post-info"><a class="article-title" href="/posts/63534.html" title="文章美化——添加颜色标签">文章美化——添加颜色标签</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2020-05-13T07:45:13.000Z" title="发表于 2020-05-13 15:45:13">2020-05-13</time><span class="article-meta__separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-01-16T09:47:35.462Z" title="更新于 2021-01-16 17:47:35">2021-01-16</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag article-meta__icon"></i><a class="article-meta__tags" href="/tags/%E6%8A%80%E6%9C%AF/">技术</a><span class="article-meta__link">•</span><a class="article-meta__tags" href="/tags/%E7%BE%8E%E5%8C%96/">美化</a><span class="article-meta__link">•</span><a class="article-meta__tags" href="/tags/Hexo/">Hexo</a></span></div><div class="content">
+以下为最终效果展示：
+
+标签黄色，这是一个简单的测试
+
+标签橘色，这是一个简单的测试
+
+标签红色，这是一个简单的测试
+
+标签粉色，这是一个简单的测试
+
+标签紫色，这是一个简单的测试
+
+一.添加CSS代码12345678910111213141516171819202122232425262728293031323334353637383940.note-orange &#123;    margin: 0 0 1rem;    padding: 0.1rem 0.8rem;    border-left: 1rem solid #EC8A64;    background-color: rgba(236,138,100,0.1);    color: #6a737d;    border-radius: 20px&#125;.note-pink &#123;    margin: 0 0 1rem;    padding: 0.1rem 0.8rem;    border-left: 1rem solid #F48FB1;    background-color: rgba(244, ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/posts/58082.html" title="Hexo博客套上腾讯云CDN">     <img class="post_bg" src="https://cdn.jsdelivr.net/gh/1134451886/blog/img/20200512122914.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hexo博客套上腾讯云CDN"></a></div><div class="recent-post-info"><a class="article-title" href="/posts/58082.html" title="Hexo博客套上腾讯云CDN">Hexo博客套上腾讯云CDN</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2020-05-11T14:16:58.000Z" title="发表于 2020-05-11 22:16:58">2020-05-11</time><span class="article-meta__separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-01-16T09:43:21.395Z" title="更新于 2021-01-16 17:43:21">2021-01-16</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag article-meta__icon"></i><a class="article-meta__tags" href="/tags/CDN/">CDN</a><span class="article-meta__link">•</span><a class="article-meta__tags" href="/tags/%E8%85%BE%E8%AE%AF%E4%BA%91/">腾讯云</a><span class="article-meta__link">•</span><a class="article-meta__tags" href="/tags/%E5%8D%9A%E5%AE%A2/">博客</a><span class="article-meta__link">•</span><a class="article-meta__tags" href="/tags/IT/">IT</a><span class="article-meta__link">•</span><a class="article-meta__tags" href="/tags/%E6%8A%80%E6%9C%AF/">技术</a><span class="article-meta__link">•</span><a class="article-meta__tags" href="/tags/%E7%BD%91%E7%AB%99/">网站</a></span></div><div class="content">
+使用腾讯云CDN的这段时间，踩了不少坑，为了避免以后自己再犯这样的错误，也为了让更多人少犯甚至避免出现这样的错误，所以写了这篇博文记录下来。
+
+一.常见错误1.重定向错误这种问题一般是因为源站、CDN、百度爬虫，这三者之间没有协同的缘故，源站如果设置了多个域名并且强制重定向到某一个域名（即访问多个域名都重定向到同一个域名），导致CDN回源请求时被反复重定向（除非CDN回源请求时请求的就是重定向之后的域名），CDN回源请求被重定向到网站加速域名，网站加速域名经过DNS又解析到CDN，CDN又回源请求……陷入死循环。最好是使用CDN之后源站就不要再设置重定向，避免出现这种bug。
+错误示例：
+
+
+
+
+首先要清楚回源HOST是什么？回源HOST是CDN请求服务器的网站资源的一个标识，也可以说是路径。假如服务器上存在多个网站，那么每一个网站对应的是服务器内的一个文件夹，外部访问网站输入网址（假定网址为www.a.com)时，DNS服务器会给这个网址返回一个IP地址，客户端拿到这个IP地址再去访问这个IP地址上的域名为www.a.com的内容。DNS服务器需要www.a.com索引到绑定的ip ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/posts/60571.html" title="教程—一个脚本实现自动网站SEO主动推送">     <img class="post_bg" src="https://cdn.jsdelivr.net/gh/1134451886/blog/img/20200509170339.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="教程—一个脚本实现自动网站SEO主动推送"></a></div><div class="recent-post-info"><a class="article-title" href="/posts/60571.html" title="教程—一个脚本实现自动网站SEO主动推送">教程—一个脚本实现自动网站SEO主动推送</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2020-05-09T07:22:17.000Z" title="发表于 2020-05-09 15:22:17">2020-05-09</time><span class="article-meta__separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-01-16T09:47:16.078Z" title="更新于 2021-01-16 17:47:16">2021-01-16</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag article-meta__icon"></i><a class="article-meta__tags" href="/tags/%E7%BD%91%E7%AB%99SEO/">网站SEO</a></span></div><div class="content">开放主动推送功能的站长平台似乎只有百度和神马，下面就以百度和神马为例。如何写一个批处理脚本，执行所有的主动推送任务。
+
+
+1.注册站长和验证域名这一步是最最基本的，想必也不用我多解释。这都不知道还做啥站长呢，是吧。
+2.获取主动推送代码
+百度1.登陆百度站长平台之后，点击搜索服务，再点击左边的链接提交进入如下页面。
+2.往下翻，看到主动推送，将主动推送的代码保存下来。注意得是curl的推送代码
+
+
+
+神马1.登录神马站长平台
+2.获取神马站长推送代码点击MIP数据提交，复制保存curl推送代码。
+
+百度-天级收录百度的天级收录在页面顶部的“搜索服务”—“移动专区”里面。天级收录一样有主动推送的代码，可以跟前面的百度推送的代码一起使用，互不影响。
+
+
+
+
+PS：获取天级收录权限需要注册熊掌号，以及完成个人实名认证。再到站长平台的站点管理给域名绑定主体就有天级收录权限，每周会刷新一次配额，如果没有配额等到下一周就会刷新。
+
+
+
+3.粘贴成脚本新建一个文本文件“.txt”格式的，打开后写入：
+1234567891011121314@echo offecho ----------------- ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/posts/63974.html" title="浅谈国内网络视频平台的清晰度">     <img class="post_bg" src="https://cdn.jsdelivr.net/gh/1134451886/blog/img/20200505151139.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="浅谈国内网络视频平台的清晰度"></a></div><div class="recent-post-info"><a class="article-title" href="/posts/63974.html" title="浅谈国内网络视频平台的清晰度">浅谈国内网络视频平台的清晰度</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2020-05-04T14:25:53.000Z" title="发表于 2020-05-04 22:25:53">2020-05-04</time><span class="article-meta__separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-01-16T09:58:33.330Z" title="更新于 2021-01-16 17:58:33">2021-01-16</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E6%9D%82%E8%B0%88/">杂谈</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag article-meta__icon"></i><a class="article-meta__tags" href="/tags/%E8%A7%86%E9%A2%91/">视频</a></span></div><div class="content">
+各位在观看视频、短视频的时候，想必都曾经有过这样的问题，有些视频同样都是在1080P的清晰度下播放，为什么有的看起来非常清晰，赏心悦目。而有的却模糊不堪、观看起来兴味索然呢？
+
+要解答这个问题其实并不复杂，原理可以从多个方面分别阐述。在这里主要说明不同平台对视频清晰度的影响。就拿国内的主流网络视频平台：腾讯视频，爱奇艺，优酷，抖音，B站来说。
+看过YouTube和网飞的人都知道，在国内是没有“真”4K的，甚至是不是1080P都要保持怀疑态度，哪怕APP上标的的确是4K，或者1080P，因为那就只是个标志而已，类似logo一样。
+拿腾讯视频目前正在热播的电视剧清平乐来说，一集时长40分钟左右，我把它下载下来，画质选的1080P，只有281.2MB……？？？？Are you kidding me？
+一集40多分钟的电视剧1080P分辨率下只有281.2MB，这是什么概念或许大家不清楚，那我拿另一个平台B站来说：下载一集24分钟的动画，1080P+清晰度下有661MB，比腾讯视频40分钟的电视剧还要高出两倍！
+这也是为什么我更喜欢在B站看视频的原因，因为比国内的其他平台清晰度要高得多。对计 ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/posts/60945.html" title="Hexo博客的优化-提升访问速度，SEO">     <img class="post_bg" src="https://r.photo.store.qq.com/psc?/V14RBB4W1HO62x/iXs1ae7hmJtTd.wIcSd4.egBMonivlLlS6FFvlid1PlTFccnsHj97VclG69Wl2wzF5*TbRc9iJhoIVR3GVUHGIf*d9Gm5.ODqrVoUdROLBM!/r" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hexo博客的优化-提升访问速度，SEO"></a></div><div class="recent-post-info"><a class="article-title" href="/posts/60945.html" title="Hexo博客的优化-提升访问速度，SEO">Hexo博客的优化-提升访问速度，SEO</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2020-04-29T02:50:08.000Z" title="发表于 2020-04-29 10:50:08">2020-04-29</time><span class="article-meta__separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-01-16T09:42:41.695Z" title="更新于 2021-01-16 17:42:41">2021-01-16</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E8%BD%AC%E8%BD%BD/">转载</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag article-meta__icon"></i><a class="article-meta__tags" href="/tags/Hexo/">Hexo</a><span class="article-meta__link">•</span><a class="article-meta__tags" href="/tags/Blog/">Blog</a></span></div><div class="content">npm速度优化
+
+玩hexo的，肯定经常和npm打交道，但是npm的下载速度着实是有点慢。
+由于下面内容会安装较多的插件，建议先更改npm仓库地址，以便能更快的安装插件
+
+
+阿里的淘宝团队在国内做了个跟npm仓库一样的镜像叫cnpm。
+淘宝镜像与npm官方包的同步频率目前为10分钟一次，来保证尽量与官方服务同步。
+所以二者可以说是一样，不用担心有什么差别。
+
+通过改变地址来使用淘宝镜像（推介）
+npm的默认仓库地址是 https://registry.npmjs.org/
+
+可以使用以下命令查看当前npm的仓库地址
+1npm config get registry
+可以使用以下命令来改变默认下载地址，从而达到不安装cnpm就能采用淘宝镜像的目的，然后使用上面的get命令查看是否设置成功。
+
+
+1npm config set registry https://registry.npm.taobao.org
+安装CNPM
+安装cnpm，命令：
+1npm install -g cnpm --registry=https://registry.npm.taobao.org
+安装后，使用以下命令 ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/posts/bd75.html" title="hexo给Valine博客添加评论自动微信推送">     <img class="post_bg" src="https://r.photo.store.qq.com/psc?/V14RBB4W1HO62x/iXs1ae7hmJtTd.wIcSd4.WJc9bud8qMoKmAO*om501*8pbZoVtJp3ByaVLElnEhwe*oKy1cchL9*TVU37nsjW2LwlCbRAXryPebqIlXMwzo!/r" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="hexo给Valine博客添加评论自动微信推送"></a></div><div class="recent-post-info"><a class="article-title" href="/posts/bd75.html" title="hexo给Valine博客添加评论自动微信推送">hexo给Valine博客添加评论自动微信推送</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2020-04-19T13:57:34.000Z" title="发表于 2020-04-19 21:57:34">2020-04-19</time><span class="article-meta__separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-01-16T09:43:02.952Z" title="更新于 2021-01-16 17:43:02">2021-01-16</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E9%9A%8F%E7%AC%94/">随笔</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag article-meta__icon"></i><a class="article-meta__tags" href="/tags/%E5%8D%9A%E5%AE%A2/">博客</a><span class="article-meta__link">•</span><a class="article-meta__tags" href="/tags/hexo/">hexo</a></span></div><div class="content">hexo博客给Valine添加评论自动微信推送
+引言：Valine评论系统本身并不自带新增评论提醒功能，好在光顾网友站点的时候发现了两个非常宽松推送API：Server酱，Qmsg酱。分别对应微信和QQ，自己琢磨着写了几行JS代码，能利用以上两个API专门针对Valine评论进行推送提醒，下面就让我们进入正题吧。
+
+先上几张效果图：
+
+
+
+
+
+
+
+
+
+下面来说如何实现，实现方案是基于hexo或者静态页面的。
+
+
+Sever酱
+
+1.打开Sever酱网站链接，点击GitHub一键登入
+
+
+
+2.到微信推送页面，按照提示绑定微信（需要关注Server酱公众号）
+
+3.获取SCKEY并保存记录下载，等会要用到4.将以下JS代码粘贴到博客网站引用的JS文件中，这里我用的是matery主题，我把它粘贴到source/js/matery.js文件底部，另起一行直接粘贴即可123456789101112131415161718192021var title1=&quot;text=KZblog又有新评论啦~！--by Valine&quot;var SCKEY_Server=&quot;&quot; ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/posts/2805.html" title="个人常用软件推荐">     <img class="post_bg" src="http://r.photo.store.qq.com/psc?/V14RBB4W1HO62x/iXs1ae7hmJtTd.wIcSd4.V01S2*by4FXTuZFnEUsiac9qSA5r*nbR9htVYyozIDqqniNanv3*gDzO8ksFn50u4LCQRJNG.MkkGxE*SR5Oxk!/r" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="个人常用软件推荐"></a></div><div class="recent-post-info"><a class="article-title" href="/posts/2805.html" title="个人常用软件推荐">个人常用软件推荐</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2020-04-17T11:20:30.000Z" title="发表于 2020-04-17 19:20:30">2020-04-17</time><span class="article-meta__separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-01-16T09:50:31.915Z" title="更新于 2021-01-16 17:50:31">2021-01-16</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E9%9A%8F%E7%AC%94/">随笔</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag article-meta__icon"></i><a class="article-meta__tags" href="/tags/%E8%BD%AF%E4%BB%B6/">软件</a><span class="article-meta__link">•</span><a class="article-meta__tags" href="/tags/%E5%88%86%E4%BA%AB/">分享</a></span></div><div class="content">个人常用软件推荐云盘类：
+百度网盘
+
+微软onedrive
+（首推onedrive，速度很快，基本能跑满）
+
+
+社交类：
+腾讯QQ
+微信
+知乎
+
+文档编辑类：
+typora（Markdown文档编辑器，用了的都说好！）
+MIcrosoft Word（微软office）
+WPS（金山办公软件）
+
+开发工具类：
+Visual Studio（微软官方IDE）
+intelliJ IDEA（Jetbrains出品）
+
+下载工具类：
+qBittorrent（简洁、美观、且实用的BT下载工具）
+迅雷（偶尔用用）
+BitComet（qBittorrent的备选）
+唧唧（Bilibili视频下载工具）
+
+游戏类：
+Steam（这个不用我多说吧？）
+Wegame
+Uplay
+
+创意类：
+Adobe Effects（后期特效、合成、动效）
+Adobe Photoshop（图片编辑）
+Adobe MediaEncoder（媒体编码、格式转换等，能够输出多种编码和文件格式）
+Adobe Premiere（视频剪辑）
+Davinci（达芬奇：视频剪辑和调色）
+
+音乐类：
+网易云音乐
+QQ音乐
+
+视频播放类：
+本地 ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/posts/cd24.html" title="HTTP状态码详解">     <img class="post_bg" src="https://r.photo.store.qq.com/psc?/V14RBB4W1HO62x/iXs1ae7hmJtTd.wIcSd4.akPx6*UVAcsv4QDNXAA1mPwbyjRCjpiQNbtIffWxKfZSkbhb15B5NgsLPmZpuWUthYFOQqPRYfFwe5BfBFgNNo!/r" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="HTTP状态码详解"></a></div><div class="recent-post-info"><a class="article-title" href="/posts/cd24.html" title="HTTP状态码详解">HTTP状态码详解</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2020-04-16T03:08:11.000Z" title="发表于 2020-04-16 11:08:11">2020-04-16</time><span class="article-meta__separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-01-16T09:41:57.374Z" title="更新于 2021-01-16 17:41:57">2021-01-16</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag article-meta__icon"></i><a class="article-meta__tags" href="/tags/HTML/">HTML</a><span class="article-meta__link">•</span><a class="article-meta__tags" href="/tags/HTTP/">HTTP</a><span class="article-meta__link">•</span><a class="article-meta__tags" href="/tags/%E7%8A%B6%E6%80%81%E7%A0%81/">状态码</a></span></div><div class="content">HTTP状态码详解
+
+
+状态码
+含义
+
+
+
+100
+客户端应当继续发送请求。这个临时响应是用来通知客户端它的部分请求已经被服务器接收，且仍未被拒绝。客户端应当继续发送请求的剩余部分，或者如果请求已经完成，忽略这个响应。服务器必须在请求完成后向客户端发送一个最终响应。
+
+
+101
+服务器已经理解了客户端的请求，并将通过Upgrade 消息头通知客户端采用不同的协议来完成这个请求。在发送完这个响应最后的空行后，服务器将会切换到在Upgrade 消息头中定义的那些协议。 　只有在切换新的协议更有好处的时候才应该采取类似措施。例如，切换到新的HTTP 版本比旧版本更有优势，或者切换到一个实时且同步的协议以传送利用此类特性的资源。
+
+
+102
+由WebDAV（RFC 2518）扩展的状态码，代表处理将被继续执行。
+
+
+200
+请求已成功，请求所希望的响应头或数据体将随此响应返回。
+
+
+201
+请求已经被实现，而且有一个新的资源已经依据请求的需要而建立，且其 URI 已经随Location 头信息返回。假如需要的资源无法及时建立的话，应当返回 ‘202 Accepted’。
+
+
+202
+服务器已接 ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/posts/357d.html" title="HTML转义符表">     <img class="post_bg" src="https://r.photo.store.qq.com/psc?/V14RBB4W1HO62x/iXs1ae7hmJtTd.wIcSd4.SY0KIO.Ctk6axERZMTJ7BwW*vUCUwPu79yQyWdu9s1AdzflTEhrMgr39nWOtYEnE47RCExxh3Cj9c9sRS20mLM!/r" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="HTML转义符表"></a></div><div class="recent-post-info"><a class="article-title" href="/posts/357d.html" title="HTML转义符表">HTML转义符表</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2020-04-16T02:50:01.000Z" title="发表于 2020-04-16 10:50:01">2020-04-16</time><span class="article-meta__separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-01-16T09:42:14.031Z" title="更新于 2021-01-16 17:42:14">2021-01-16</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag article-meta__icon"></i><a class="article-meta__tags" href="/tags/HTML/">HTML</a><span class="article-meta__link">•</span><a class="article-meta__tags" href="/tags/%E8%BD%AC%E4%B9%89/">转义</a></span></div><div class="content">HTML特殊转义字符对照表
+
+
+字符
+十进制
+转义字符
+
+
+
+“
+&amp;#34;
+&amp;quot;
+
+
+&amp;
+&amp;#38;
+&amp;amp;
+
+
+&lt;
+&amp;#60;
+&amp;lt;
+
+
+&gt;
+&amp;#62;
+&amp;gt;
+
+
+不断开空格(non-breaking space)
+&amp;#160;
+&amp;nbsp;
+
+
+​        
+
+
+
+字符
+十进制
+转义字符
+字符
+十进制
+转义字符
+字符
+十进制
+转义字符
+
+
+
+?
+&amp;#161;
+&amp;iexcl;
+Á
+&amp;#193;
+&amp;Aacute;
+á
+&amp;#225;
+&amp;aacute;
+
+
+￠
+&amp;#162;
+&amp;cent;
+Â
+&amp;#194;
+&amp;circ;
+â
+&amp;#226
+&amp;acirc;
+
+
+￡
+&amp;#163;
+&amp;pound;
+Ã
+&amp;#195;
+&amp;Atilde;
+ã
+&amp;#227;
+&amp;atilde;
+
+
+¤
+&amp;#164;
+&amp;curren;
+Ä
+&a ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/posts/cde4.html" title="搜狗站长强开sitemap提交权限">     <img class="post_bg" src="https://r.photo.store.qq.com/psc?/V14RBB4W1HO62x/iXs1ae7hmJtTd.wIcSd4.Qj9IwY36kO*3eEgS3yjo2unFs2tBQaak.oxkoAueDGbkWhWxFdgMA065pxb6IM4.PVOmM8s2KvUyv2NXSIRFSc!/r" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="搜狗站长强开sitemap提交权限"></a></div><div class="recent-post-info"><a class="article-title" href="/posts/cde4.html" title="搜狗站长强开sitemap提交权限">搜狗站长强开sitemap提交权限</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2020-04-13T07:52:26.000Z" title="发表于 2020-04-13 15:52:26">2020-04-13</time><span class="article-meta__separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-01-16T09:47:53.438Z" title="更新于 2021-01-16 17:47:53">2021-01-16</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag article-meta__icon"></i><a class="article-meta__tags" href="/tags/SEO/">SEO</a><span class="article-meta__link">•</span><a class="article-meta__tags" href="/tags/%E6%94%B6%E5%BD%95/">收录</a><span class="article-meta__link">•</span><a class="article-meta__tags" href="/tags/%E6%90%9C%E7%8B%97/">搜狗</a></span></div><div class="content">搜狗站长平台强开sitemap提交权限1.注册搜狗站长平台，添加你的站点搜狗站长平台地址：http://zhanzhang.sogou.com/
+怎么注册这个就不用我说了吧，如果你这都不会，你还折腾啥？
+2.进入后台，点击网站支持，浏览器右键查看源代码
+
+使用搜索功能找到如下代码：
+1&lt;option value=&quot;你的网站ID号&quot;&gt;www.你的域名.com&lt;/option&gt;
+
+把网站ID号保存下来，网站ID一般是一串数字
+我们将你的网站ID放到下面这个链接的末尾，
+http://zhanzhang.sogou.com/index.php/sitemap/create/id/
+把你的网站ID号放最后，比如你的ID是1234567
+http://zhanzhang.sogou.com/index.php/sitemap/create/id/1234567
+复制到浏览器地址栏，回车，神奇的一幕出现了，直接提交地图即可。如图所示
+
+如果需要搜狗的sitemap提交权限，可以按照此方法进行尝试，亲测有效！
+</div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/3/"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-info-avatar is-center"><img class="avatar-img" src="/img/psc.svg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">零奇</div><div class="author-info__description">这是零奇的个人博客网站，一个大学生的学习笔记。</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">33</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">67</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">分类</div><div class="length-num">5</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/1134451886"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="tencent://message/?uin=1134451886&amp;Site=&amp;Menu=yes" target="_blank" title="QQ"><i class="fab fa-qq"></i></a><a class="social-icon" href="mailto:1134451886@qq.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="https://steamcommunity.com/id/1134451886/" target="_blank" title="Steam"><i class="fab fa-steam"></i></a><a class="social-icon" href="https://github.com/1134451886" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="https://space.bilibili.com/7285768" target="_blank" title="B站主页"><i class="icon-bilibili"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/posts/38396.html" title="副团の宝贵经验"><img src="https://cdn.jsdelivr.net/gh/1134451886/blog/img/20210110201715.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="副团の宝贵经验"/></a><div class="content"><a class="title" href="/posts/38396.html" title="副团の宝贵经验">副团の宝贵经验</a><time datetime="2021-01-09T01:10:46.000Z" title="发表于 2021-01-09 09:10:46">2021-01-09</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/41727.html" title="Pico开发—常用API汇总"><img src="https://cdn.jsdelivr.net/gh/1134451886/blog/img/20201216163443.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Pico开发—常用API汇总"/></a><div class="content"><a class="title" href="/posts/41727.html" title="Pico开发—常用API汇总">Pico开发—常用API汇总</a><time datetime="2020-12-16T07:59:03.000Z" title="发表于 2020-12-16 15:59:03">2020-12-16</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/52552.html" title="Android SDK Tools下载SDK"><img src="https://cdn.jsdelivr.net/gh/1134451886/blog/img/20201213174524.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Android SDK Tools下载SDK"/></a><div class="content"><a class="title" href="/posts/52552.html" title="Android SDK Tools下载SDK">Android SDK Tools下载SDK</a><time datetime="2020-12-13T09:37:07.000Z" title="发表于 2020-12-13 17:37:07">2020-12-13</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/42947.html" title="某些视频不显示IDM下载按钮？原因竟是这样！——教你如何使用IDM下载网络上的任何视频"><img src="https://cdn.jsdelivr.net/gh/1134451886/blog/img/20201028235548.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="某些视频不显示IDM下载按钮？原因竟是这样！——教你如何使用IDM下载网络上的任何视频"/></a><div class="content"><a class="title" href="/posts/42947.html" title="某些视频不显示IDM下载按钮？原因竟是这样！——教你如何使用IDM下载网络上的任何视频">某些视频不显示IDM下载按钮？原因竟是这样！——教你如何使用IDM下载网络上的任何视频</a><time datetime="2020-10-28T14:31:28.000Z" title="发表于 2020-10-28 22:31:28">2020-10-28</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/60593.html" title="手动设置V2Ray PAC代理模式访问P站、Telegram、Github等等"><img src="https://cdn.jsdelivr.net/gh/1134451886/blog/img/20201021111506.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="手动设置V2Ray PAC代理模式访问P站、Telegram、Github等等"/></a><div class="content"><a class="title" href="/posts/60593.html" title="手动设置V2Ray PAC代理模式访问P站、Telegram、Github等等">手动设置V2Ray PAC代理模式访问P站、Telegram、Github等等</a><time datetime="2020-10-21T03:04:36.000Z" title="发表于 2020-10-21 11:04:36">2020-10-21</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline"><i class="fas fa-folder-open"></i><span>分类</span></div><ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%8A%80%E6%9C%AF/"><span class="card-category-list-name">技术</span><span class="card-category-list-count">13</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%9D%82%E8%B0%88/"><span class="card-category-list-name">杂谈</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E7%AC%94%E8%AE%B0/"><span class="card-category-list-name">笔记</span><span class="card-category-list-count">4</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E8%BD%AC%E8%BD%BD/"><span class="card-category-list-name">转载</span><span class="card-category-list-count">7</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E9%9A%8F%E7%AC%94/"><span class="card-category-list-name">随笔</span><span class="card-category-list-count">7</span></a></li>
+            
+            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/After-Effects/" style="font-size: 1.23em; color: #999ea6">After Effects</a> <a href="/tags/Android/" style="font-size: 1.1em; color: #999">Android</a> <a href="/tags/BT/" style="font-size: 1.23em; color: #999ea6">BT</a> <a href="/tags/Blog/" style="font-size: 1.1em; color: #999">Blog</a> <a href="/tags/C/" style="font-size: 1.37em; color: #99a4b2">C#</a> <a href="/tags/CDN/" style="font-size: 1.1em; color: #999">CDN</a> <a href="/tags/CMD/" style="font-size: 1.1em; color: #999">CMD</a> <a href="/tags/CSS3/" style="font-size: 1.1em; color: #999">CSS3</a> <a href="/tags/DOS/" style="font-size: 1.1em; color: #999">DOS</a> <a href="/tags/Firefox/" style="font-size: 1.1em; color: #999">Firefox</a> <a href="/tags/HTML/" style="font-size: 1.37em; color: #99a4b2">HTML</a> <a href="/tags/HTTP/" style="font-size: 1.1em; color: #999">HTTP</a> <a href="/tags/Hexo/" style="font-size: 1.23em; color: #999ea6">Hexo</a> <a href="/tags/IDM/" style="font-size: 1.1em; color: #999">IDM</a> <a href="/tags/IT/" style="font-size: 1.1em; color: #999">IT</a> <a href="/tags/Pr/" style="font-size: 1.1em; color: #999">Pr</a> <a href="/tags/SEO/" style="font-size: 1.1em; color: #999">SEO</a> <a href="/tags/Unity/" style="font-size: 1.1em; color: #999">Unity</a> <a href="/tags/Visual-Studio/" style="font-size: 1.23em; color: #999ea6">Visual Studio</a> <a href="/tags/bitcomit/" style="font-size: 1.1em; color: #999">bitcomit</a> <a href="/tags/bittorrent/" style="font-size: 1.1em; color: #999">bittorrent</a> <a href="/tags/ffmpeg/" style="font-size: 1.23em; color: #999ea6">ffmpeg</a> <a href="/tags/hexo/" style="font-size: 1.1em; color: #999">hexo</a> <a href="/tags/qbittorrent/" style="font-size: 1.23em; color: #999ea6">qbittorrent</a> <a href="/tags/web/" style="font-size: 1.1em; color: #999">web</a> <a href="/tags/%E4%B8%8B%E8%BD%BD/" style="font-size: 1.37em; color: #99a4b2">下载</a> <a href="/tags/%E4%BA%92%E8%81%94%E7%BD%91/" style="font-size: 1.23em; color: #999ea6">互联网</a> <a href="/tags/%E5%86%9B%E8%AE%AD/" style="font-size: 1.1em; color: #999">军训</a> <a href="/tags/%E5%88%86%E4%BA%AB/" style="font-size: 1.1em; color: #999">分享</a> <a href="/tags/%E5%89%AA%E8%BE%91/" style="font-size: 1.1em; color: #999">剪辑</a> <a href="/tags/%E5%8D%9A%E5%AE%A2/" style="font-size: 1.23em; color: #999ea6">博客</a> <a href="/tags/%E5%90%88%E6%88%90/" style="font-size: 1.1em; color: #999">合成</a> <a href="/tags/%E5%90%8E%E6%9C%9F/" style="font-size: 1.1em; color: #999">后期</a> <a href="/tags/%E5%91%BD%E4%BB%A4%E8%A1%8C/" style="font-size: 1.23em; color: #999ea6">命令行</a> <a href="/tags/%E5%A3%B0%E9%9F%B3%E5%A4%84%E7%90%86/" style="font-size: 1.1em; color: #999">声音处理</a> <a href="/tags/%E5%B0%81%E8%A3%85/" style="font-size: 1.1em; color: #999">封装</a> <a href="/tags/%E5%BC%80%E5%8F%91/" style="font-size: 1.1em; color: #999">开发</a> <a href="/tags/%E6%82%A6%E8%AF%BB/" style="font-size: 1.1em; color: #999">悦读</a> <a href="/tags/%E6%8A%80%E6%9C%AF/" style="font-size: 1.5em; color: #99a9bf">技术</a> <a href="/tags/%E6%8B%89%E7%BB%83/" style="font-size: 1.1em; color: #999">拉练</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/01/"><span class="card-archive-list-date">一月 2021</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/12/"><span class="card-archive-list-date">十二月 2020</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/10/"><span class="card-archive-list-date">十月 2020</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/09/"><span class="card-archive-list-date">九月 2020</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/07/"><span class="card-archive-list-date">七月 2020</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/06/"><span class="card-archive-list-date">六月 2020</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/05/"><span class="card-archive-list-date">五月 2020</span><span class="card-archive-list-count">4</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/04/"><span class="card-archive-list-date">四月 2020</span><span class="card-archive-list-count">9</span></a></li><li class="card-archive-list-item more is-center"><a class="card-archive-list-link-more" href="/archives/">
+              <span>查看更多</span><i class="fas fa-angle-right"  ></i></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">33</div></div><div class="webinfo-item"><div class="item-name">已运行时间 :</div><div class="item-count" id="runtimeshow" data-publishDate="2020-02-19T16:00:00.000Z"></div></div><div class="webinfo-item"><div class="item-name">本站总字数 :</div><div class="item-count">40.2k</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2021-01-17T09:40:55.467Z"></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2021 By 零奇</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text"><img src="/img/icp.png">&nbsp;<a href="https://beian.miit.gov.cn/" target="_blank" rel="nofollow">湘ICP备20001535号-2</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></div></body></html>
