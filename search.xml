@@ -11,6 +11,12 @@
         <content type="html"><![CDATA[<blockquote><p>昨天连上蓝牙耳机打CSGO，发现耳机有声音，但是麦克风讲不了话。折腾了一番，把声音设置里的输入设备改成了蓝牙耳机那个，成了，但是耳机又听不到声音了，？？？……</p><p><img src="https://cdn.jsdelivr.net/gh/1134451886/blog/img/20210119184257.png" alt="声音设置改麦克风设备"></p></blockquote><h2 id="网上找解决方案"><a href="#网上找解决方案" class="headerlink" title="网上找解决方案"></a>网上找解决方案</h2><p><img src="https://cdn.jsdelivr.net/gh/1134451886/blog/img/20210119184432.png"></p><p><img src="https://cdn.jsdelivr.net/gh/1134451886/blog/img/20210119184536.png"></p><p>基本上就是说都使用<code>hands free</code>模式，但是这个音质……太伤耳朵了。那还不如不连蓝牙耳机，于是我继续苦苦寻找，终于给我找到了最终的解决方法。</p><h2 id="完美解决"><a href="#完美解决" class="headerlink" title="完美解决"></a>完美解决</h2><p>据说这是Win10系统更新遗留下来的问题，只要以管理员运行<code>CMD</code>输入下面这一段命令，扫描完毕重启之后就能解决！（亲测有效）</p><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sfc/scannow</span><br></pre></td></tr></table></figure><p><img src="https://cdn.jsdelivr.net/gh/1134451886/blog/img/20210119185141.png"></p><p>链接：<a href="https://tieba.baidu.com/p/6426685009">https://tieba.baidu.com/p/6426685009</a></p>]]></content>
       
       
+      <categories>
+          
+          <category> 技术 </category>
+          
+      </categories>
+      
       
         <tags>
             
