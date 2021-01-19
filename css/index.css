@@ -1543,7 +1543,6 @@ a:hover {
 }
 img {
   max-width: 100%;
-  max-height: 600px;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   -o-transition: all 0.2s;
@@ -3849,8 +3848,6 @@ _:future,
 }
 #article-container img {
   margin: 0 auto 0.8rem;
-  padding-bottom: 0.5rem;
-  padding-top: 0.5rem;
 }
 #article-container p {
   margin: 0 0 0.8rem;
