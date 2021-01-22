@@ -168,7 +168,7 @@
       <link href="posts/60593.html"/>
       <url>posts/60593.html</url>
       
-        <content type="html"><![CDATA[<h2 id="V2Ray的PAC代理手动设置"><a href="#V2Ray的PAC代理手动设置" class="headerlink" title="V2Ray的PAC代理手动设置"></a>V2Ray的PAC代理手动设置</h2><p><img src="https://cdn.jsdelivr.net/gh/1134451886/blog/img/20201021110648.png"></p><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>网上冲浪就应该随心所欲，国家出于对国家安全层面的考量设立了GFW但不妨碍我们依然可以利用梯子访问外网体验网上冲浪的乐趣。</p><p>在使用V2Ray的过程中，我发现其自带的PAC过滤规则不尽完美，比如在PAC模式下访问某些国外网站依然是没有走PAC代理、无法访问或者访问速度巨慢无比。</p><ul><li>Pixiv（简称P站）</li><li>GitHub（程序猿的天堂）</li><li>Telegram（社交软件，感觉比QQ简洁、流畅，非常好用）</li><li>……</li></ul><h2 id="修改添加PAC代理"><a href="#修改添加PAC代理" class="headerlink" title="修改添加PAC代理"></a><del>修改</del>添加PAC代理</h2><p>字面意思，既然自带的PAC代理规则不够全面，那肯定是可以自己手动添加的，首先打开V2Ray——参数设置——用户PAC设置<img src="https://cdn.jsdelivr.net/gh/1134451886/blog/img/20201021130601.png"></p><p><img src="https://cdn.jsdelivr.net/gh/1134451886/blog/img/20201021130710.png"></p><p>在下面填入<code>代理域名</code>或<code>IP地址</code>（每一条后面要加<code>,</code>逗号，最后一行可以不用）</p><p><img src="https://cdn.jsdelivr.net/gh/1134451886/blog/img/20201021130826.png"></p><ul><li>telegram.com（<code>代理telegram</code>）</li><li>pixiv.com(<code>代理pixiv</code>)</li><li>91.108.56.108,<br>149.154.175.53,<br>149.154.167.50,<br>149.154.167.51,<br>149.154.167.92,<br>149.154.167.151,   （<code>都是telegram的服务器IP地址，telegram部分功能会使用不同服务器</code>）</li><li>github.com(代理GitHub)</li></ul><p>设置完成之后，即使在PAC模式下也能愉快的网上冲浪了，不用反复切换全局模式和PAC模式。遇到想添加进PAC里的网站域名只要往里一丢就行了。</p><h3 id="踩坑（2021-1-18更新）"><a href="#踩坑（2021-1-18更新）" class="headerlink" title="踩坑（2021.1.18更新）"></a>踩坑（2021.1.18更新）</h3><p>今天因为要在B站看港澳台番剧，发现开了全局代理没有用，访问B站跟没走代理一样，反复调试之后发现是这一处的设置有问题，默认是<code>“绕过局域网和大陆”</code>，把它改成<code>“全局”</code>解决。</p><p><img src="https://cdn.jsdelivr.net/gh/1134451886/blog/img/20210118213048.png" alt="全局代理“失效”"></p><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><blockquote><p>在我因PAC模式规则不全，苦恼而在网上搜索相关教程的时候，没有找到相应的教程，当时还以为会没有办法去完善这个PAC。直到今天，打算仔细研究一下V2Ray的软件功能才发现可以自己添加PAC规则，怪不得没有教程，原来是因为太简单了……只要照着V2Ray软件本身的提示轻轻松松就能解决。我还稀里糊涂到网上到处找教程，-_-||</p><p>我写这个教程也算是为了帮助当时像我一样糊涂的人吧</p></blockquote>]]></content>
+        <content type="html"><![CDATA[<h2 id="V2Ray的PAC代理手动设置"><a href="#V2Ray的PAC代理手动设置" class="headerlink" title="V2Ray的PAC代理手动设置"></a>V2Ray的PAC代理手动设置</h2><p><img src="https://cdn.jsdelivr.net/gh/1134451886/blog/img/20201021110648.png"></p><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>网上冲浪就应该随心所欲，国家出于对国家安全层面的考量设立了GFW但不妨碍我们依然可以利用梯子访问外网体验网上冲浪的乐趣。</p><p>在使用V2Ray的过程中，我发现其自带的PAC过滤规则不尽完美，比如在PAC模式下访问某些国外网站依然是没有走PAC代理、无法访问或者访问速度巨慢无比。</p><ul><li>Pixiv（简称P站）</li><li>GitHub（程序猿的天堂）</li><li>Telegram（社交软件，感觉比QQ简洁、流畅，非常好用）</li><li>……</li></ul><h2 id="修改添加PAC代理"><a href="#修改添加PAC代理" class="headerlink" title="修改添加PAC代理"></a><del>修改</del>添加PAC代理</h2><p>字面意思，既然自带的PAC代理规则不够全面，那肯定是可以自己手动添加的，首先打开V2Ray——参数设置——用户PAC设置<img src="https://cdn.jsdelivr.net/gh/1134451886/blog/img/20201021130601.png"></p><p><img src="https://cdn.jsdelivr.net/gh/1134451886/blog/img/20201021130710.png"></p><p>在下面填入<code>代理域名</code>或<code>IP地址</code>（每一条后面要加<code>,</code>逗号，最后一行可以不用）</p><p><img src="https://cdn.jsdelivr.net/gh/1134451886/blog/img/20201021130826.png"></p><ul><li>telegram.com（<code>代理telegram</code>）</li><li>pixiv.com(<code>代理pixiv</code>)</li><li>91.108.56.108,<br>149.154.175.53,<br>149.154.167.50,<br>149.154.167.51,<br>149.154.167.92,<br>149.154.167.151,   （<code>都是telegram的服务器IP地址，telegram部分功能会使用不同服务器</code>）</li><li>github.com(代理GitHub)</li></ul><p>设置完成之后，即使在PAC模式下也能愉快的网上冲浪了，不用反复切换全局模式和PAC模式。遇到想添加进PAC里的网站域名只要往里一丢就行了。</p><h3 id="踩坑（2021-1-18更新）"><a href="#踩坑（2021-1-18更新）" class="headerlink" title="踩坑（2021.1.18更新）"></a>踩坑（2021.1.18更新）</h3><p>今天因为要在B站看港澳台番剧，发现开了全局代理没有用，访问B站跟没走代理一样，反复调试之后发现是这一处的设置有问题，默认是<code>“绕过局域网和大陆”</code>，把它改成<code>“全局”</code>解决。</p><p><img src="https://cdn.jsdelivr.net/gh/1134451886/blog/img/20210118213048.png" alt="全局代理“失效”"></p><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><blockquote><p>在我因PAC模式规则不全，苦恼而在网上搜索相关教程的时候，没有找到相应的教程，当时还以为会没有办法去完善这个PAC。直到今天，打算仔细研究一下V2Ray的软件功能才发现可以自己添加PAC规则，怪不得没有教程，原来是因为太简单了……只要照着V2Ray软件本身的提示轻轻松松就能解决。我还稀里糊涂到网上到处找教程，-_-||</p><p>我写这个教程也算是为了帮助当时像我一样糊涂的人吧</p><p>如果觉得对你有帮助的话，可以通过下方按钮打赏，请站长吃颗糖。<img src="https://cdn.jsdelivr.net/gh/1134451886/blog/img/20210122224115.png"></p></blockquote>]]></content>
       
       
       <categories>
@@ -798,11 +798,11 @@
       
         <tags>
             
+            <tag> 视频 </tag>
+            
             <tag> Pr </tag>
             
             <tag> 剪辑 </tag>
-            
-            <tag> 视频 </tag>
             
             <tag> 声音处理 </tag>
             
@@ -897,9 +897,9 @@
             
             <tag> 命令行 </tag>
             
-            <tag> 视频 </tag>
-            
             <tag> ffmpeg </tag>
+            
+            <tag> 视频 </tag>
             
             <tag> 编码 </tag>
             
@@ -967,9 +967,9 @@
       
         <tags>
             
-            <tag> 视频 </tag>
-            
             <tag> ffmpeg </tag>
+            
+            <tag> 视频 </tag>
             
             <tag> 编码 </tag>
             
