@@ -373,11 +373,11 @@
             
             <tag> 技术 </tag>
             
+            <tag> 博客 </tag>
+            
             <tag> CDN </tag>
             
             <tag> 腾讯云 </tag>
-            
-            <tag> 博客 </tag>
             
             <tag> IT </tag>
             
@@ -483,9 +483,9 @@
       
         <tags>
             
-            <tag> 博客 </tag>
-            
             <tag> hexo </tag>
+            
+            <tag> 博客 </tag>
             
         </tags>
       
@@ -798,11 +798,11 @@
       
         <tags>
             
-            <tag> 视频 </tag>
-            
             <tag> Pr </tag>
             
             <tag> 剪辑 </tag>
+            
+            <tag> 视频 </tag>
             
             <tag> 声音处理 </tag>
             
@@ -897,9 +897,9 @@
             
             <tag> 命令行 </tag>
             
-            <tag> ffmpeg </tag>
-            
             <tag> 视频 </tag>
+            
+            <tag> ffmpeg </tag>
             
             <tag> 编码 </tag>
             
@@ -967,9 +967,9 @@
       
         <tags>
             
-            <tag> ffmpeg </tag>
-            
             <tag> 视频 </tag>
+            
+            <tag> ffmpeg </tag>
             
             <tag> 编码 </tag>
             
