@@ -4,6 +4,62 @@
   
     
     <entry>
+      <title>PWA渐进式浏览-让网页像原生APP一般流畅</title>
+      <link href="posts/8aa6.html"/>
+      <url>posts/8aa6.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="PWA是什么？"><a href="#PWA是什么？" class="headerlink" title="PWA是什么？"></a>PWA是什么？</h2><blockquote><p>PWA（Progressive Web App）是一种理念，使用多种技术来增强web app的功能，可以让网站的体验变得更好，能够模拟一些原生功能，比如通知推送。在移动端利用标准化框架，让网页应用呈现和原生应用相似的体验。</p><p>运用现代的 Web API 以及传统的渐进式增强策略来创建跨平台 Web 应用程序。这些应用无处不在、功能丰富，使其具有与原生应用相同的用户体验优势。</p></blockquote><p>简单来说，它是一种新技术能让网页运行如<code>原生应用</code>般的流畅体验。当然，前提是浏览器和站点都使用了PWA技术。</p><p>目前已经支持PWA的浏览器有：</p><ul><li>火狐Firefox</li><li>谷歌Google Chrome</li><li>微软Microsoft Edge</li></ul><p>使用了PWA技术的站点：<code>Youtube</code>、<code>Twitter</code>……</p><p>所以我们可以在YouTube使用PWA啦！笔者赶紧上手体验了一下，的确流畅很多，而且界面变得非常美观、精致。让笔者爱不释手，只是可惜，目前完全使用PWA技术的网站并不多，国内各大网站几乎没有完全适配PWA的站点。</p><p>PWA这么好用，稍微有点担心APP开发工程师们的饭碗……（手动滑稽</p><h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><h3 id="Microsoft-Edge"><a href="#Microsoft-Edge" class="headerlink" title="Microsoft Edge"></a>Microsoft Edge</h3><p>这里以安装YouTube作参考，其他网站都是一样的操作。</p><p>点击浏览器窗口右上角的三个点=&gt;<code>应用</code>=&gt;<code>安装Youtube</code></p><p><img src= "https://cdn.jsdelivr.net/gh/1134451886/blog/img/20210124194809.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/1134451886/blog/img/20210201141348.png" alt="安装youtube"></p><p><img src= "https://cdn.jsdelivr.net/gh/1134451886/blog/img/20210124194809.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/1134451886/blog/img/20210201141454.png" alt="点击”安装“"></p><p>安装完成之后就有了<code>YouTube APP</code>，它能像原生应用程序一样，运行起来非常流畅。</p><p><img src= "https://cdn.jsdelivr.net/gh/1134451886/blog/img/20210124194809.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/1134451886/blog/img/20210201141718.png" alt="安装完成"></p><p>PS：支持、但是不完全支持的站点在安装PWA后，会出现跳转页面依然使用浏览器打开的情况。这表示当前的站点并不完全支持PWA。</p><p><img src= "https://cdn.jsdelivr.net/gh/1134451886/blog/img/20210124194809.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/1134451886/blog/img/20210201143410.png" alt="本站支持PWA技术"></p><p><strong>最后，郑重宣布！！！</strong></p><p><strong>本站全站支持PWA技术！只需要使用浏览器安装本站点即可享受如原生应用般的流畅体验！</strong></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 杂谈 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 技术 </tag>
+            
+            <tag> 日常 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>macOS配置Unity、VSCODE开发环境</title>
+      <link href="posts/90a1.html"/>
+      <url>posts/90a1.html</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>这几天给家里的旧电脑装了黑苹果系统，要配置macOS的Unity开发环境，在配置的过程中遇到了一些问题在这里记录下来，希望以后在遇到的时候能够有笔记可以查阅，不至于在同一个问题上反复栽跟头。</p></blockquote><h2 id="安装unity"><a href="#安装unity" class="headerlink" title="安装unity"></a>安装unity</h2><p>这一步真没啥好说的，进入unity<a href="https://unity.cn/">官网</a>，点击<code>下载Unity</code>进入到下载页面</p><p><img src= "https://cdn.jsdelivr.net/gh/1134451886/blog/img/20210124194809.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/1134451886/blog/img/20210131161435.png" alt="点击进入下载页面"></p><p><img src= "https://cdn.jsdelivr.net/gh/1134451886/blog/img/20210124194809.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/1134451886/blog/img/20210131161801.png" alt="下载页面"></p><p>然后选择需要的版本下载安装。</p><p>PS：如果打开慢的话，可能是DNS服务器的缘故。可以尝试手动修改DNS服务器，改成<code>114.114.114.114</code>或者<code>114.114.114.110</code>这两个公有DNS服务器比较快、比较稳定。</p><h2 id="Homebrew安装-net-core"><a href="#Homebrew安装-net-core" class="headerlink" title="Homebrew安装.net core"></a>Homebrew安装<code>.net core</code></h2><p>这里我是使用macOS独有的Homebrew包管理器安装的<code>.Net Core</code>，打开<code>终端</code>输入</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install dotnet-sdk</span><br></pre></td></tr></table></figure><p><img src= "https://cdn.jsdelivr.net/gh/1134451886/blog/img/20210124194809.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/1134451886/blog/img/20210131162733.png" alt="HomeBrew安装.Net Core"></p><p>这里我已经安装。PS：使用HomeBrew需要挂梯子，不然速度会非常感人……。</p><h2 id="配置VSCODE"><a href="#配置VSCODE" class="headerlink" title="配置VSCODE"></a>配置VSCODE</h2><p><img src= "https://cdn.jsdelivr.net/gh/1134451886/blog/img/20210124194809.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/1134451886/blog/img/20210131163217.png" alt="vscode必要的插件"></p><p>这4个插件是必要的，安装完插件重启VSCODE，如果还没有unity的代码提示的话，检查一下输出窗口是否有如下语句：</p><p><code>Downloading package &#39;OmniSharp for OSX, Version=1.37.7beta.16&#39;(50067 KB)..................</code></p><p>这是在下载一个插件包，安装完成之后才会有unity的代码提示，实测如果没挂梯子速度一样会非常感人，会下载相当长一段时间。</p><h2 id="更改unity默认编辑器"><a href="#更改unity默认编辑器" class="headerlink" title="更改unity默认编辑器"></a>更改unity默认编辑器</h2><p>unity的mac版本跟Windows版本的UI布局稍微有点不一样，在mac版本中，首选项设置在左上角的<code>Unity</code>=&gt;<code>Preferences</code></p><p><img src= "https://cdn.jsdelivr.net/gh/1134451886/blog/img/20210124194809.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/1134451886/blog/img/20210131164257.png" alt="unity首选项设置"></p><p><img src= "https://cdn.jsdelivr.net/gh/1134451886/blog/img/20210124194809.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/1134451886/blog/img/20210131164546.png" alt="点击Browse浏览文件"></p><p><img src= "https://cdn.jsdelivr.net/gh/1134451886/blog/img/20210124194809.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/1134451886/blog/img/20210131164628.png" alt="选择app里的vscode"></p><p>然后选择VSCODE，点击<code>Open</code>更改为默认编辑器。</p><p><img src= "https://cdn.jsdelivr.net/gh/1134451886/blog/img/20210124194809.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/1134451886/blog/img/20210131164853.png"></p><p>然后就可以在VSCODE里面愉快的敲代码了！甚至在Visual Studio中都没有的代码提示它也有，比如：<code>Awake</code>、<code>OnMouseDown</code>、<code>OnMouseDrag</code>等等这些方法名。</p><p><img src= "https://cdn.jsdelivr.net/gh/1134451886/blog/img/20210124194809.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/1134451886/blog/img/20210131165047.png"></p><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>在整个过程，最最重要的还是梯子，如果没有梯子的话对于开发者来说真的太不方便了，很多功能都需要通过梯子来跟外部的网络进行连接才能正常使用。而且现在机场的价格已经是非常亲民了，每个月几块钱而已，这里我不推荐任何机场免得有打广告的嫌疑，如果没有梯子那简直是噩梦。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 杂谈 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 技术 </tag>
+            
+            <tag> 日常 </tag>
+            
+            <tag> 踩坑 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>我的2020年度摄影总结</title>
       <link href="posts/1129.html"/>
       <url>posts/1129.html</url>
@@ -934,9 +990,9 @@
             
             <tag> qbittorrent </tag>
             
-            <tag> 互联网 </tag>
-            
             <tag> 日常 </tag>
+            
+            <tag> 互联网 </tag>
             
             <tag> 网络 </tag>
             
