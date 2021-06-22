@@ -8,3 +8,6 @@
 .icon-bilibili{
     font-style: normal;
 }
+#vcomment img{
+	display: inline-block;
+}

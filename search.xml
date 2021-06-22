@@ -4,6 +4,64 @@
   
     
     <entry>
+      <title>Unity 组件学习笔记</title>
+      <link href="posts/6b37.html"/>
+      <url>posts/6b37.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="Rigidbody组件解析"><a href="#Rigidbody组件解析" class="headerlink" title="Rigidbody组件解析"></a>Rigidbody组件解析</h2><h3 id="一-属性"><a href="#一-属性" class="headerlink" title="一.属性"></a>一.属性</h3><h4 id="1-Mass-「质量」"><a href="#1-Mass-「质量」" class="headerlink" title="1.Mass 「质量」"></a>1.Mass 「质量」</h4><p>设置物体的质量，也就是重量。质量单位是KG。</p><h4 id="2-Drag-「阻力」"><a href="#2-Drag-「阻力」" class="headerlink" title="2.Drag 「阻力」"></a>2.Drag 「阻力」</h4><p>物体所受的空气阻力，0表示无阻力，值很大时物体会停止运动。</p><h4 id="3-Angular-Drag-「角阻力」"><a href="#3-Angular-Drag-「角阻力」" class="headerlink" title="3.Angular Drag 「角阻力」"></a>3.Angular Drag 「角阻力」</h4><p>受到扭曲力时的空气阻力，0表示无阻力，值很大时物体会停止运动。</p><h4 id="4-Use-Gravity-「是否使用重力」"><a href="#4-Use-Gravity-「是否使用重力」" class="headerlink" title="4.Use Gravity 「是否使用重力」"></a>4.Use Gravity 「是否使用重力」</h4><h3 id="二-方法"><a href="#二-方法" class="headerlink" title="二.方法"></a>二.方法</h3><h4 id="1-使用刚体移动物体"><a href="#1-使用刚体移动物体" class="headerlink" title="1.使用刚体移动物体"></a>1.使用刚体移动物体</h4><p><code>Rigidbody.MovePosition(Vector3)</code>：使用刚体移动物体的位置。</p><p><code>Vector3</code>还需加上自身位置。</p><p>使用刚体移动物体，物体是根据世界坐标系的方向移动的。</p><p><code>使用刚体移动物体，物体会触发物理相关的事件</code>。</p><h4 id="2-AddForce"><a href="#2-AddForce" class="headerlink" title="2.AddForce()"></a>2.AddForce()</h4><h5 id="①作用"><a href="#①作用" class="headerlink" title="①作用"></a>①作用</h5><p>给刚体添加一个力，让刚体按<code>「世界坐标系」</code>进行运动。</p><h5 id="②代码"><a href="#②代码" class="headerlink" title="②代码"></a>②代码</h5><figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Rigidbody.AddForce(Vector3,ForceMode);</span><br></pre></td></tr></table></figure><p>Vector3：力的方向和大小；</p><p>ForceMode：力的模式<code>「enum类型」</code>。</p><h4 id="3-AddRelativeForce"><a href="#3-AddRelativeForce" class="headerlink" title="3.AddRelativeForce()"></a>3.AddRelativeForce()</h4><h5 id="①作用-1"><a href="#①作用-1" class="headerlink" title="①作用"></a>①作用</h5><p>给刚体添加一个力，让刚体按<code>「自身坐标系」</code>进行运动。</p><h5 id="②代码-1"><a href="#②代码-1" class="headerlink" title="②代码"></a>②代码</h5><figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Rigidbody.AddRelativeForce(Vector3,ForceMode);</span><br></pre></td></tr></table></figure><p>Vector3：力的方向和大小；</p><p>ForceMode：力的模式「enum类型」。</p><p>PS.如果运用在球体上，球体滚动旋转会导致自身坐标系方向发生改变，于是会像这样来回滚动。</p><p><img src= "https://cdn.jsdelivr.net/gh/1134451886/blog/img/20210124194809.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/1134451886/blog/img/20210517194245.gif" alt="给球体施加AddRelativeForce"></p><h3 id="4-FixedUpdate"><a href="#4-FixedUpdate" class="headerlink" title="4.FixedUpdate()"></a>4.FixedUpdate()</h3><p>固定更新方法。</p><p>所有和<code>物理相关</code>的操作，代码都要写在<code>FixedUpdate()</code>方法体内。</p><p>固定更新的时间间隔是0.02秒，1秒执行50次。</p><p>Edit-&gt;Project Settings-&gt;Time面板中的Fixed Timestep参数设置。</p><p>Update()方法是每一帧执行一次。</p><p>画面每渲染完一次，就是一帧，每帧的时间是不固定的。</p><p><strong>在Update()方法中执行物理操作，会出现卡顿的情况。</strong></p><h2 id="碰撞体组件"><a href="#碰撞体组件" class="headerlink" title="碰撞体组件"></a>碰撞体组件</h2><p>使用刚体移动的物体，与场景中其他的物体相碰撞：</p><p>其实是碰撞的目标物体的<code>「碰撞体」</code>组件，也就是<code>Collider</code>。</p><p>另外和目标物体碰撞的，是我们移动的物体的自身的「碰撞体」组件。</p><p>碰撞体可以理解为我们的“外骨骼”。</p><p>模型只要加了刚体就必须要加碰撞体，否则没有意义。</p><h3 id="Box-Collider「盒型碰撞体」"><a href="#Box-Collider「盒型碰撞体」" class="headerlink" title="Box Collider「盒型碰撞体」"></a>Box Collider「盒型碰撞体」</h3><h4 id="①简介"><a href="#①简介" class="headerlink" title="①简介"></a>①简介</h4><p>盒子碰撞体，形状是立方体形，用于包裹类似“立方体”的模型，比如：盒子，箱子，门，房子等。</p><h4 id="②组件属性"><a href="#②组件属性" class="headerlink" title="②组件属性"></a>②组件属性</h4><p>Center 「中心点」</p><p>设置Box Collider的中心点</p><p>Size 「大小」</p><p>设置Box Collider的大小</p><h3 id="Sphere-Collider「球形碰撞体」"><a href="#Sphere-Collider「球形碰撞体」" class="headerlink" title="Sphere Collider「球形碰撞体」"></a>Sphere Collider「球形碰撞体」</h3><h4 id="①简介-1"><a href="#①简介-1" class="headerlink" title="①简介"></a>①简介</h4><p>球形碰撞体，形状是球形，用于包裹类似“球形”的模型</p><h4 id="②组件属性-1"><a href="#②组件属性-1" class="headerlink" title="②组件属性"></a>②组件属性</h4><p>Radius「半径」</p><p>设置Sphere Collider的大小</p><h3 id="Capsule-Collider「胶囊碰撞体」"><a href="#Capsule-Collider「胶囊碰撞体」" class="headerlink" title="Capsule Collider「胶囊碰撞体」"></a>Capsule Collider「胶囊碰撞体」</h3><h4 id="①简介-2"><a href="#①简介-2" class="headerlink" title="①简介"></a>①简介</h4><p>胶囊碰撞体，形状是胶囊状，用于包裹“胶囊形”的模型。</p><h4 id="②组件属性-2"><a href="#②组件属性-2" class="headerlink" title="②组件属性"></a>②组件属性</h4><p>Height「高度」</p><p>设置Capsule Collider的高度</p><p>Direction「方向」</p><p>设置Capsule Collider的高度方向「轴向」</p><h3 id="Mesh-Collider「网格碰撞体」"><a href="#Mesh-Collider「网格碰撞体」" class="headerlink" title="Mesh Collider「网格碰撞体」"></a>Mesh Collider「网格碰撞体」</h3><h4 id="①简介-3"><a href="#①简介-3" class="headerlink" title="①简介"></a>①简介</h4><p>网格碰撞体，用于包裹复杂结构的模型。</p><h4 id="②组件属性-3"><a href="#②组件属性-3" class="headerlink" title="②组件属性"></a>②组件属性</h4><p>Mesh「网格」</p><p>根据指定的网格，生成碰撞体。</p><h3 id="碰撞监测与处理"><a href="#碰撞监测与处理" class="headerlink" title="碰撞监测与处理"></a>碰撞监测与处理</h3><h4 id="物理碰撞方法："><a href="#物理碰撞方法：" class="headerlink" title="物理碰撞方法："></a>物理碰撞方法：</h4><p>1.<strong>OnCollisionEnter</strong></p><p>碰撞开始执行一次。</p><p>2.<strong>OnCollisionExit</strong></p><p>碰撞结束执行一次。</p><p>3.<strong>OnCollisionStay</strong></p><p>碰撞中一直执行。</p><h4 id="触发器碰撞监测「Trigger」"><a href="#触发器碰撞监测「Trigger」" class="headerlink" title="触发器碰撞监测「Trigger」"></a>触发器碰撞监测「Trigger」</h4><p>1.<strong>OnTriggerEnter</strong></p><p>2.<strong>OnTriggerExit</strong></p><p>3.<strong>OnTriggerStay</strong></p><p>触发器不触发相关物理效果，由刚体操作的物体会直接穿过触发器而不进行碰撞。</p><h3 id="模型中心点"><a href="#模型中心点" class="headerlink" title="模型中心点"></a>模型中心点</h3><p>模型身上的坐标轴的中心点，也就是我们模型的中心点。</p><p>模型位置、旋转、缩放都是基于模型的中心点来进行变化的。</p><p><strong>改变模型中心点</strong></p><p>创建一个空物体，创建父子关系，通过父物体来控制子物体。</p><p>也就间接的改变了模型的中心点。</p><p><strong>中心点工具</strong></p><p>Center：当选中两个模型的时候，设置为「Center」，模型组的中心点就在两个模型的中间中心位置。</p><p>Pivot：当选中两个模型的时候，设置为「Pivot」，模型组的中心点就在后选中的模型的中心点位置。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Unity </tag>
+            
+            <tag> 开发 </tag>
+            
+            <tag> 组件 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>站长的自述</title>
+      <link href="posts/345.html"/>
+      <url>posts/345.html</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>突然发现自己已经一个多月没有更新个人网站了，主要原因是因为我开！学！了！忙着在学校安顿下来，并且平时都在上课，基本上没什么时间写博客了。<del>（主要还是懒！）</del></p><p>今天想着已经安顿好了一段时间了，那就开一篇来跟大家聊聊。</p></blockquote><h3 id="自我介绍"><a href="#自我介绍" class="headerlink" title="自我介绍"></a>自我介绍</h3><p>我是一个普通大专院校的大二学生，计算机虚拟现实技术专业，平时的专业课有Unity3D、Affter Effcts、PhotoShop、3D MAX、摄影基础等等……，如果说实话，我将来是想从事游戏制作行业程序之类的，因为我本身就喜欢玩电子游戏，在同学们都沉迷王者荣耀、吃鸡、联盟的时候，我却喜欢那些制作精良的单机游戏，像近年的“只狼·影逝二度”、“黑暗之魂3”、“鬼泣5”之类的，我非常欣赏像<code>宫崎英高</code>这样的游戏制作人，他的游戏总会给你带来惊喜。</p><p><img src= "https://cdn.jsdelivr.net/gh/1134451886/blog/img/20210124194809.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/1134451886/blog/img/20210314171641.jpg" alt="只狼·影逝二度"></p><p><img src= "https://cdn.jsdelivr.net/gh/1134451886/blog/img/20210124194809.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/1134451886/blog/img/20210314172115.jpeg" alt="宫崎英高"></p><h3 id="目前的状态"><a href="#目前的状态" class="headerlink" title="目前的状态"></a>目前的状态</h3><p>在学校过着三点一线的生活，寝室、教室、机房，在这里非常感谢我的专业老师能把机房里的一间闲置的房间给我们使用，这让我有了放置台式电脑的空间，并且环境也相当不错。所以我除了上课和在宿舍休息之外，其余的时间都会待在这里生活和学习。</p><p>下面上图</p><p><img src= "https://cdn.jsdelivr.net/gh/1134451886/blog/img/20210124194809.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/1134451886/blog/img/20210314171851.jpg"></p><p><img src= "https://cdn.jsdelivr.net/gh/1134451886/blog/img/20210124194809.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/1134451886/blog/img/20210314172212.jpg"></p><p>折腾家里的旧电脑，装上了黑苹果系统带到学校里来，这里不得不给顺丰点个赞👍，包装和运送都非常给力，就是运费有点小贵。</p><h3 id="未来的方向"><a href="#未来的方向" class="headerlink" title="未来的方向"></a>未来的方向</h3><p>首先，这个博客网站我会持续的更新维护下去，尽管没有收益还让我倒贴，但是谁让我喜欢它呢。况且一年一百多的费用并不是很高，我还是能够接受的。</p><p>未来我希望能够从事游戏开发的工作，我知道这个难度非常高，但我想挑战看看。也希望能够结识一些志同道合的朋友，一起进步。</p><p>希望这个网站能陪伴着我一起成长，我也见证着它的蜕变。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 随笔 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 杂谈 </tag>
+            
+            <tag> 自述 </tag>
+            
+            <tag> 唠嗑 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>PWA渐进式浏览-让网页像原生APP一般流畅</title>
       <link href="posts/8aa6.html"/>
       <url>posts/8aa6.html</url>
@@ -371,9 +429,9 @@
       
         <tags>
             
-            <tag> 网络安全 </tag>
-            
             <tag> 互联网 </tag>
+            
+            <tag> 网络安全 </tag>
             
         </tags>
       
@@ -992,9 +1050,9 @@
             
             <tag> 日常 </tag>
             
-            <tag> 互联网 </tag>
-            
             <tag> 网络 </tag>
+            
+            <tag> 互联网 </tag>
             
             <tag> 迅雷 </tag>
             
