@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'songti';
+    src: url('https://cdn.jsdelivr.net/gh/1134451886/1134451886.github.io@master/fonts/songti.ttf');
+}
+#article-container img{
+    max-height: 500px;
+}
+.icon-bilibili{
+    font-style: normal;
+}
+#vcomment img{
+	display: inline-block;
+}
